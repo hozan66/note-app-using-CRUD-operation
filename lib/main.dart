@@ -11,6 +11,8 @@ void setupLocator() {
   GetIt.I.registerLazySingleton(() => NotesService());
 }
 
+// Internet permission
+// <uses-permission android:name="android.permission.INTERNET" />
 void main() {
   setupLocator();
   runApp(const MyApp());
